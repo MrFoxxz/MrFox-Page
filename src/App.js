@@ -3,7 +3,7 @@ import { Switch, Route} from 'react-router-dom';
 
 /* Pages */
 import Homepage from './pages/Homepage';
-import Menu from './pages/Menu';
+import Contact from './pages/Contact';
 import Aboutme from './pages/Aboutme';
 import Allies from './pages/Allies';
 import Gallery from './pages/Gallery';
@@ -21,13 +21,29 @@ class App extends Component {
       <div className="App">
         <Switch>
 
+          {/* HOMEPAGE */}
+  
         <Route exact path="/" render={()=> (  
             <Homepage />
           )}/>
+
+          {/* HOME MENU */}
   
-        <Route exact path="/Menu" render={()=> (  
+        <Route exact path="/Allies" render={()=> (  
           <MainLayout>
-            <Menu />
+            <Allies />
+          </MainLayout>
+        )}/>
+
+        <Route exact path="/Portfolio" render={()=> (  
+          <MainLayout>
+            <Portfolio />
+          </MainLayout>
+        )}/>
+
+        <Route exact path="/Contacts" render={()=> (  
+          <MainLayout>
+            <Contact />
           </MainLayout>
         )}/>
 
@@ -37,11 +53,7 @@ class App extends Component {
           </MainLayout>
         )}/>
 
-        <Route exact path="/Allies" render={()=> (  
-          <MainLayout>
-            <Allies />
-          </MainLayout>
-        )}/>
+        {/* OTHERS */}
 
         <Route exact path="/Gallery" render={()=> (  
           <MainLayout>
@@ -49,12 +61,6 @@ class App extends Component {
           </MainLayout>
         )}/>
 
-        <Route exact path="/Portfolio" render={()=> (  
-          <MainLayout>
-            <Portfolio />
-          </MainLayout>
-        )}/>
-  
         </Switch>
       </div>
     );

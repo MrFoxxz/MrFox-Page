@@ -1,12 +1,12 @@
 import React from 'react';
 import './styles.scss'
 
-const Menu = props => {
+const Contact = props => {
     return (
         <section className="menu">
-            Menu
+            Contact
         </section>
     );
 };
 
-export default Menu;
+export default Contact;
