@@ -1,6 +1,6 @@
 import React from "react"
 import Card from '../../components/Card'
-import InfoCard from '../../components/ICard'
+import ICard from '../../components/ICard'
 
 import "./styles.scss";
 
@@ -12,7 +12,7 @@ export const AboutMe = () => {
       {/*   <div className="img"> IMG </div> */}
 
         <div className="infobox">
-          <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <ul class="list nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
               <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Sobre Mi</a>
             </li>
@@ -23,7 +23,7 @@ export const AboutMe = () => {
               <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Experiencia</a>
             </li>
             <li class="nav-item" >
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Miguel Angel Jaimes Contreras</a>
+              <p class="nav-link disabled" tabindex="-1" aria-disabled="true">Miguel Angel Jaimes Contreras</p>
             </li>
           </ul>
 
@@ -54,6 +54,8 @@ export const AboutMe = () => {
                 - Sequelize ORM
                 - Express.js
                 - PostgreSQL
+                - Ruby on Rails
+                - Firebase
                 - Git
                 - Photoshop
                 - AutoCAD">
@@ -87,68 +89,79 @@ export const AboutMe = () => {
                 - Música
                 - Leer">
               </Card>
+
+              <Card>
+              </Card>
+
             </div>
 
             <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-            <InfoCard
+              <ICard
               id="1"
               tittle="Full Stack Web Developer"
               sub="Henry"
               cert="https://docs.google.com/viewer?srcid=1XZYFZcx-8sCAHFK0wBpsmNDxfvZkpu9I&pid=explorer&efh=false&a=v&chrome=false&embedded=true"
-              text="Conocimientos en JavaScript, HTML, CSS, Node, React, Redux, SQL"></InfoCard>
+              text="Conocimientos en JavaScript, HTML, CSS, Node, React, Redux, SQL">                
+              </ICard>
 
-              <InfoCard
+              <ICard
               id="2"
               tittle="Manejo de Adobe Photoshop"
               sub="El Servicio Nacional de Aprendizaje SENA"
               cert="https://docs.google.com/viewer?srcid=17quZ8IYAzJYYBJCvin-8nyKcFdln-553&pid=explorer&efh=false&a=v&chrome=false&embedded=true"
-              text="Manejo del programa de diseño de Autodesk Photoshop."></InfoCard>
+              text="Manejo del programa de diseño de Autodesk Photoshop."></ICard>
 
-              <InfoCard
+              <ICard
               id="3"
               tittle="Manejo de herramienta de Microsoft Office: Excel"
               sub="El Servicio Nacional de Aprendizaje SENA"
               cert="https://docs.google.com/viewer?srcid=1ogxPqjuajdxXRsNJ9IdcMxNntiPXUzRC&pid=explorer&efh=false&a=v&chrome=false&embedded=true"
-              text="Manejo del programa de diseño de Autodesk Photoshop."></InfoCard>
+              text="Manejo del programa de diseño de Autodesk Photoshop.">                
+              </ICard>
 
-              <InfoCard
+              <ICard
               id="4"
               tittle="Autodesk Inventor"
               sub="Instituto de Computacion Arts"
               cert="https://docs.google.com/viewer?srcid=1-7l9FJOJW5MHSuzalN5IF2VPNgFwe6j_&pid=explorer&efh=false&a=v&chrome=false&embedded=true"
-              text="Manejo del programa de diseño de Autodesk Inventor y AutoCAD."></InfoCard>
+              text="Manejo del programa de diseño de Autodesk Inventor y AutoCAD.">
+              </ICard>
 
-              <InfoCard
+              <ICard
               id="5"
               tittle="Especialista Instalador de Redes"
               sub="Instituto de Capacitación Técnica Keys"
               cert="https://docs.google.com/viewer?srcid=18r03DuiKHFGBrNyGzaMS8UGVPXMUmv8q&pid=explorer&efh=false&a=v&chrome=false&embedded=true"
-              text="Conocimientos en Cableado interno, montaje de redes LAN y de fibra optica."></InfoCard>
-
+              text="Conocimientos en Cableado interno, montaje de redes LAN y de fibra optica.">
+              </ICard>
 
               <Card
               id="6"
               tittle="Ingenieria Mecanica (Incompleto)"
               sub="Universidad Central de Venezuela"
-              text="Carrera estudidada en la Univerdidad Central de Venezuela con materias aprovadas hasta el 6to semestre."></Card>
+              text="Carrera estudidada en la Univerdidad Central de Venezuela con materias aprovadas hasta el 6to semestre.">
+              </Card>
+
+              <Card>
+              </Card>
             </div>
 
             <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-              <Card
+              <ICard
                 id="7"
                 tittle="Manager"
                 sub="Empire Gaming"
-                cert=""
+                cert="https://docs.google.com/viewer?srcid=10BGSBl6mWSaNaPyBG1HIcGS37tuoBCL_&pid=explorer&efh=false&a=v&chrome=false&embedded=true"
                 text='Encargado de la gerencia, administración, y coordinación del local gamer "Empire Gaming", sus eventos y empleados.'>
-              </Card>
+              </ICard>
                 
-              <InfoCard
+              <ICard
                 id="8"
                 tittle="Coordinador de atencion Integral"
                 sub="Bodegón de Francis"
                 cert="https://docs.google.com/viewer?srcid=1-07edrV-4KyMRVeBuiofuPdoV9ydBtz9&pid=explorer&efh=false&a=v&chrome=false&embedded=true"
                 text="Puesto encargado en coordinar equipo para eventos organizados por el Bodegon, Atencion al cliente en general y organizacion de bodega.">
-              </InfoCard>
+              </ICard>
 
               <Card
                 id="9"
@@ -156,6 +169,9 @@ export const AboutMe = () => {
                 sub="Universidad Central de Venezuela"
                 cert=""
                 text="Tutor de las materias, diseño mecanico, diseño AutoCAD e Inventor 3D"> 
+              </Card>
+
+              <Card>
               </Card>
 
             </div>

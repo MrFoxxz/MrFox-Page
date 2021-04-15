@@ -1,15 +1,15 @@
 import React from "react"
 import "./styles.css";
 
-export const InfoCard = (props) => {
+export const ICard = (props) => {
   return (
     <div>
       <div class="card">
       <div class="card-body">
-          <h5 class="card-title">{props.tittle}</h5>
-          <h6 class="card-subtitle mb-2 text-muted">{props.sub}</h6>
-          <p class="card-text">{props.text}</p>
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target={"#"+props.id}>
+          <h1>{props.tittle}</h1>
+          <h3 class="text-muted">{props.sub}</h3>
+          <p>{props.text}</p>
+          <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target={"#"+props.id}>
             Certificado
           </button>
       </div>
@@ -19,13 +19,13 @@ export const InfoCard = (props) => {
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLongTitle">{props.tittle}</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
+              <h1>{props.tittle}</h1>
+              <button type="button" class="close btn btn-primary btn-lg" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">X</span>
               </button>
             </div>
             <div class="modal-body">
-              <iframe src={props.cert} width="100%" height="500px"></iframe>
+              <iframe title="Certification" src={props.cert} width="100%" height="500px"></iframe>
             </div>
           </div>
         </div>
@@ -36,4 +36,4 @@ export const InfoCard = (props) => {
   );
 };
 
-export default InfoCard
+export default ICard

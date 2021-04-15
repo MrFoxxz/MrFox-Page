@@ -6,9 +6,9 @@ export const Card = (props) => {
     <div>
       <div class="card">
       <div class="card-body">
-          <h5 class="card-title">{props.tittle}</h5>
-          <h6 class="card-subtitle mb-2 text-muted">{props.sub}</h6>
-          <p class="card-text">{props.text}</p>
+          <h1>{props.tittle}</h1>
+          <h3 class="text-muted" >{props.sub}</h3>
+          <h6>{props.text}</h6>
       </div>
       </div>
     </div>

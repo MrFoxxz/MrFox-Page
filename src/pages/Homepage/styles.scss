@@ -5,6 +5,19 @@ img{
     margin: auto;
 }
 
+h3{
+    font-size: 1.9rem;
+}
+
+h4{
+    font-size: 2.5rem;
+}
+
+
+h6{
+    font-size: 1.6rem;
+}
+
 #menu {
     position: absolute;
     left: 50%;
@@ -43,8 +56,6 @@ img{
 }
 
 .menu-item {
-    width: 70px;
-    height: 70px;
     position: absolute;
     left: 50%;
     line-height: 5px;
@@ -73,7 +84,7 @@ img{
     display: none;
 }
 .clickme{
-    margin-top: 120px;
+    margin-top: 15rem;
 }
 
 /* NORMAL SIZE */
