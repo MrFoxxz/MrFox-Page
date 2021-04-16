@@ -1,6 +1,7 @@
 import React from "react"
 import Card from '../../components/Card'
 import ICard from '../../components/ICard'
+import MButton from '../../components/MButton'
 
 import "./styles.scss";
 
@@ -14,13 +15,13 @@ export const AboutMe = () => {
         <div className="infobox">
           <ul class="list nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
-              <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Sobre Mi</a>
+              <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><h3>Sobre Mi</h3></a>
             </li>
             <li class="nav-item" role="presentation">
-              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Educación</a>
+              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false"><h3>Educación</h3></a>
             </li>
             <li class="nav-item" role="presentation">
-              <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Experiencia</a>
+              <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false"><h3>Experiencia</h3></a>
             </li>
             <li class="nav-item" >
               <p class="nav-link disabled" tabindex="-1" aria-disabled="true">Miguel Angel Jaimes Contreras</p>
@@ -29,19 +30,26 @@ export const AboutMe = () => {
 
           <div class="tab-content" id="myTabContent">
 
+            <MButton
+            id="0"
+            name="Curriculum bien perron"
+            cert="https://docs.google.com/viewer?srcid=1XZYFZcx-8sCAHFK0wBpsmNDxfvZkpu9I&pid=explorer&efh=false&a=v&chrome=false&embedded=true">
+            </MButton>
+
             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
               <Card
                 id="10"
                 tittle="Sobre Mi:"
-                sub="Full Stack Developer Front-end Developer Designer y gamer, dispuesto a retos y a crear cosas nuevas."
+                sub="Full Stack Developer Front-end Developer Designer y gamer, dispuesto a retos, aprender y a crear cosas nuevas."
                 cert=""
-                text="Programador con conocimientos en manejo de lenguajes, diseño gráfico, videojuegos, fotografía y atención al cliente, con expectativas de ampliar mi perfil profesional en áreas como desarrollo de código y diseño de páginas web. 
+                text="  Programador con conocimientos en manejo de lenguajes, diseño gráfico, videojuegos, fotografía y atención al cliente, con expectativas de ampliar mi perfil profesional en áreas como desarrollo de código y diseño de páginas web. 
                   Habilidades comunicativas tanto oral como escrita y de trabajo en equipo, además de la capacidad de análisis de sistemas y rápido aprendizaje. Con una alta atención al detalle y tolerancia al estrés.
                   Observador, disciplinado, comprometido, ético y proactivo.    ">
               </Card>
               
               <Card
-                id="10"
+                id="11"
                 tittle="Skills:"
                 sub="Manejo los siguientes programas por experiencia y cursos realizados."
                 cert=""
@@ -62,7 +70,7 @@ export const AboutMe = () => {
               </Card>
 
               <Card
-                id="10"
+                id="12"
                 tittle="Aptitudes:"
                 sub="Aptitudes que definen mi forma de trabajar, gracias a las experiencias recibidas."
                 cert=""
@@ -77,7 +85,7 @@ export const AboutMe = () => {
               </Card>
 
               <Card
-                id="10"
+                id="13"
                 tittle="Aficiones e intereses:"
                 sub="Hobbies y aficiones favoritas"
                 cert=""

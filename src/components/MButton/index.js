@@ -1,18 +1,12 @@
 import React from "react"
 import "./styles.scss";
 
-export const ICard = (props) => {
+export const MButton = (props) => {
   return (
     <div>
-      <div class="card">
-      <div class="card-body">
-          <h1>{props.tittle}</h1>
-          <h3 class="text-muted">{props.sub}</h3>
-          <h6>{props.text}</h6>
-          <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target={"#"+props.id}>
-            <h6>Certificado</h6>
-          </button>
-      </div>
+        <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target={"#"+props.id}>
+        <h3>{props.name}</h3>
+        </button>
 
       {/* <!-- Modal --> */}
       <div class="modal fade" id={props.id} tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -31,9 +25,8 @@ export const ICard = (props) => {
         </div>
       </div>
           
-      </div>
     </div>
   );
 };
 
-export default ICard
+export default MButton
